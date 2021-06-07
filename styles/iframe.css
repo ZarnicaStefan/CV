@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.head {
+  background: linear-gradient(
+    180deg,
+    hsl(14, 76%, 88%) 76%,
+    #c49a79 65%,
+    #88684e 85%
+  );
+  width: 110px;
+  height: 140px;
+  border-radius: 70% 70% 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glasses-line {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 5px;
+  right: -13px;
+  width: 110px;
+  height: 5px;
+  background-color: #111;
+}
+
+.glass-right {
+  position: absolute;
+  left: 55px;
+  display: flex;
+  justify-content: center;
+  height: 10px;
+  width: 30px;
+  padding: 11px;
+  border-radius: 50% 50% 100% 100%;
+  border: 5px solid #111;
+  background-color: #fff;
+}
+
+.glass-left {
+  position: absolute;
+  right: 55px;
+  display: flex;
+  justify-content: center;
+  height: 10px;
+  width: 30px;
+  padding: 11px;
+  border-radius: 50% 50% 100% 100%;
+  border: 5px solid #111;
+  background-color: #fff;
+}
+
+.eyes {
+  position: absolute;
+  width: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brows {
+  position: absolute;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brow:first-child {
+  position: absolute;
+  left: 48px;
+}
+
+.brow:last-child {
+  position: relative;
+  right: 10px;
+}
+
+.eye {
+  background-color: white;
+  height: 18px;
+  width: 18px;
+  margin: 5px;
+  margin-bottom: 3px;
+  border-radius: 50%;
+  border-top: 2px solid hsl(19, 46%, 68%);
+  border-bottom: 2px solid hsl(19, 46%, 68%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  background-color: #5e481e;
+  border-radius: 100%;
+}
+
+.eye::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #111;
+  border-radius: 100%;
+  margin-left: 1px;
+}
+
+.brow {
+  width: 23px;
+  height: 16px;
+  border-top: 4px solid #5e481e;
+  border-radius: 100%;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 3px;
+}
+
+.nose {
+  position: absolute;
+  border: 2px solid hsl(19, 46%, 68%);
+  width: 12px;
+  height: 10px;
+  border-radius: 0 0 100% 100%;
+  border-top: none;
+  margin-top: 30px;
+}
+
+.mouth {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: white;
+  margin-top: 90px;
+  border-radius: 50% 50% 100% 100%;
+  border: 3px solid hsl(20, 22%, 38%);
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-top-width: 5px;
+  border-bottom: 2px;
+}
+
+.ears {
+  z-index: -1;
+  position: absolute;
+  width: 225px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ear {
+  width: 13px;
+  height: 25px;
+  border: 1px solid hsl(19, 46%, 68%);
+  background: hsl(19, 76%, 85%);
+  border-radius: 0 100% 100% 0;
+}
+
+.ear:first-child {
+  border-radius: 100% 0 0 100%;
+}
+
+.hair {
+  position: absolute;
+  width: 110px;
+  height: 60px;
+  background-color: hsl(27, 33%, 28%);
+  margin-bottom: 110px;
+  border-radius: 50% 100% 0 0;
+}
